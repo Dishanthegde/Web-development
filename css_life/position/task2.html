@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 100vw;
+            height: 60vh;
+            background-color: red;
+            position: absolute;
+        }
+
+        #sub1 {
+            height: 350px;
+            width: 600px;
+            background-color: green;
+            position: absolute;
+            margin-top: 290px;
+            margin-left: 200px;
+        }
+
+        #sub2 {
+            position: relative;
+            height: 350px;
+            width: 600px;
+            margin-top: 290px;
+            background-color: green;
+            margin-left: 1000px;
+        }
+
+        #sub3 {
+            width: 76vw;
+            height: 10vh;
+            background-color: green;
+            margin-top: 60px;
+            margin-left: 200px;
+        }
+
+        #p1 {
+            font-size: 100px;
+            position: absolute;
+            padding-top: 70px;
+        }
+
+        #p2 {
+            font-size: 30px;
+            position: relative;
+            padding-top: 200px;
+        }
+
+        #p3 {
+            font-size: 40px;
+        }
+
+        .text1{
+            position: absolute;
+            font-size: 40px;
+            margin-left: 200px;
+            margin-top: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="text1">
+            <h1>title-page</h1>
+            <p>subtitle</p>
+        </div>
+        <div class="sub" id="sub1">
+            <div class="text">
+                <p id="p1">title-card</p>
+                <p id="p2">Lorem ipsum dolor sit.</p>
+            </div>
+        </div>
+        <div class="sub" id="sub2">
+            <h2>example 2</h2>
+        </div>
+        <div class="sub" id="sub3">
+            <p id="p3">example 3</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 800px;
+            width: 800px;
+            background-color: rgb(198, 184, 184);
+            border: 2px solid black;
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding-left: 150px;
+        }
+
+        .sub {
+            height: 600px;
+            width: 600px;
+            background-color: white;
+            border: 2px solid black;
+            position: relative;
+            /* padding: 100px; */
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(127, 159, 127);
+            border: 2px solid rgb(161, 93, 93);
+        }
+
+        #box-1 {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        #box-2 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        #box-3 {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+
+        #box-4 {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box" id="box-1">box-1</div>
+        <div class="box" id="box-2">box-2</div>
+        <div class="box" id="box-3">box-3</div>
+        <div class="box" id="box-4">box-4</div>
+        <div class="sub">
+            <div class="box" id="box-1">box-1</div>
+            <div class="box" id="box-2">box-2</div>
+            <div class="box" id="box-3">box-3</div>
+            <div class="box" id="box-4">box-4</div>
+        </div>
+    </div>
+</body>
+
+</html>
