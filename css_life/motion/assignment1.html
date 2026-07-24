@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(234, 231, 231);
+            box-sizing: border-box;
+        }
+
+        html,body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            border: 1px solid rgb(15, 15, 15);
+            height: 800px;
+            width: 800px;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+
+        }
+        .child{
+            height: 50px;
+            width: 50px;
+            /* background-color: aqua; */
+            /* transform: translate(350px, 350px); */
+            /* transform-style: initial; */
+            /* transform: rotate(90deg);
+            transform: rotateX(120deg);
+            transform: rotate(90deg); */
+            /* transform: scale(2,4); */
+            /* transform: skew(140deg,140deg); */
+            display: inline-flex;
+            border: 1px solid black;
+
+        }
+        #box{
+            transform: translate(350px, 350px) rotate(45deg) scale(2,2);
+        }
+
+        #box1{
+            transform: translate(10px, 10px) ;
+        }
+
+        #box2{
+            transform: translate(590px, 10px);
+        }
+
+        #box3{
+            transform: translate(-85px, 690px);
+
+        }
+
+        #box4{
+            transform: translate(490px, 690px);
+        }
+
+        #box5{
+            transform: translate(-95px,150px);
+        }
+        #box6{
+            transform: translate(-145px,590px);
+        }
+        #box7{
+            transform: translate(180px,150px);
+        }
+
+        #box8{
+            transform: translate(130px,590px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child" id="box">
+            <img src="../../Resources/alejandro_balde.jpg" alt="">
+        </div> 
+        <div class="child" id="box1">
+            <img src="../../Resources/alejandro_balde.jpg" alt="">
+        </div>
+        <div class="child" id="box2">
+            <img src="../../Resources/alejandro_balde.jpg" alt="">
+        </div>
+        <div class="child" id="box3">
+            <img src="../../Resources/alejandro_balde.jpg" alt="">
+        </div>
+        <div class="child" id="box4">
+            <img src="../../Resources/alejandro_balde.jpg" alt="">
+        </div>
+        <div class="child" id="box5">
+            <img src="../../Resources/alejandro_balde.jpg" alt="">
+        </div>
+        <div class="child" id="box6">
+            <img src="../../Resources/alejandro_balde.jpg" alt="">
+        </div>
+        <div class="child" id="box7">
+            <img src="../../Resources/alejandro_balde.jpg" alt="">
+        </div>
+        <div class="child" id="box8">
+            <img src="../../Resources/alejandro_balde.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
