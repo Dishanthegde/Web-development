@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main{
+            height: 800px;
+            width: 800px;
+            border: 1px solid white;
+
+        }
+
+        .child{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            animation: batmen;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes batmen {
+            0%{
+                transform: translate(0px, 0px) rotate(0deg);
+            }
+            25%{
+                transform: translate(700px, 0px) rotate(90deg);
+            }
+
+            50%{
+                transform: translate(700px, 700px) rotate(180deg);
+            }
+
+            75%{
+                transform: translate(0px, 700px) rotate(270deg);
+            }
+            100%{
+                transform: translate(0px, 0px) rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="child">box1</div>
+    </div>
+</body>
+</html>
