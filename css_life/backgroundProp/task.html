@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blending Modes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ddd;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            position: relative;
+            background-image: url(../../Resources/images.jpeg);
+            background-size: cover;
+            backround-position: center;
+            background-repeat: no-repeat;
+
+            top: 0;
+            left: 0;
+        }
+
+        .content {
+            position: absolute;
+            left: 120px;
+            top: 220px;
+
+            color: rgb(50, 48, 48);
+        }
+
+        .cards {
+            position: absolute;
+            right: 120px;
+            bottom: 80px;
+
+            width: 420px;
+            height: 350px;
+        }
+
+        .card {
+            width: 220px;
+            height: 280px;
+
+            position: absolute;
+            border-radius: 6px;
+
+            background-size: cover;
+            background-position: center;
+
+            box-shadow: 0 15px 30px rgba(0, 0, 0, .35);
+        }
+
+        .card1 {
+            background-image: url("../../Resources/frankie_de_jong.jpg");
+
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+
+        .card2 {
+            background-image: url("../../Resources/araujo.jpg");
+
+            left: 70px;
+            top: 50px;
+            z-index: 2;
+        }
+
+        .card3 {
+            background-image: url("../../Resources/alejandro_balde.jpg");
+
+            left: 140px;
+            top: 100px;
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="content">
+            <p>DESIGN</p>
+            <h1>Blending Modes:</h1>
+            <h1>A Complete Guide</h1>
+        </div>
+
+        <div class="cards">
+            <div class="card card1"></div>
+            <div class="card card2"></div>
+            <div class="card card3"></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
