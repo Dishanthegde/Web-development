@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .nav{
+            width: 100%;
+            height: 70px;
+            background-color: transparent;
+            color: rgb(10, 10, 10);
+        }
+
+        body{
+            height: 30vh;
+            width: 100vw;
+            background-image: url(../../Resources/images.jpeg);
+            
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 1;
+            position:relative;
+        }
+
+        .nav_list{
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            flex-direction: row;
+            padding-top: 20px;
+            gap: 20px;
+        }
+
+        .nav_left{
+            position: absolute;
+            left: 200px;
+            top: 20px;
+            font-size: 20px;
+        }
+
+        .nav_right{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            right: 150px;
+            top: 20px;
+            height: 30px;
+            margin-left: 10px;
+            text-align: center;
+        }
+
+        a{
+            margin-left: 10px;
+            text-decoration: none;
+            color: rgb(10, 10, 10);
+        }
+
+        #btn_men{
+            margin-left: 30px;
+            height: 30px;
+            width: 150px;
+            background-color:rgb(109, 109, 233);
+            color: rgb(6, 6, 6);
+            padding-top: 5px;
+            padding-left: 0px;
+            padding-right: 8px;
+        }
+
+        #login{
+            background-color: none;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 100px;
+        }
+
+        .para{
+            font-size: 20px;
+            color: blue;
+        }
+
+        .heading{
+            font-size: 25px;
+            font-weight: 600;
+            color: rgb(10, 10, 10);
+            height: 200px;
+            width: 400px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .sub_para{
+            font-size: 17px;
+            color: rgb(10, 10, 10);
+            height: 100px;
+            width: 500px;
+            text-align: center;
+            margin-top: 0px;
+            font-weight: 500;
+        }
+
+        .btn{
+            margin-top: 20px;
+            background-color: rgb(109, 109, 233);
+            width: 100px;
+            height: 30px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 10px;
+        }
+
+        .card{
+            top: 38rem;
+            position: absolute;
+            height: 280px;
+            width: 300px;
+            border: 1px solid rgb(10, 10, 10);
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, .5);
+        }
+
+        #card1{
+            bottom: 10px;
+            left: 450px;
+        }
+
+        #card3{
+            bottom: 10px;
+            right: 450px;
+        }
+
+        .small_logo{
+            height: 50px;
+            width: 50px;
+            background-color: rgb(109, 109, 233);
+            margin-top: 25px;
+            margin-left: 25px;
+            border-radius: 10%;
+        }
+
+        h3{
+            margin-top: 20px;
+            margin-left: 25px;
+        }
+        .desc{
+            margin-top: 20px;
+            margin-left: 25px;
+        }
+
+        hr{
+            width: 20%;
+            margin-top: 20px;
+            margin-left: 25px;
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav_left">
+            <Strong>Brand Name</Strong>
+        </div>
+        <ul class="nav_list" type="none">
+            <li id="nav_mid">Home</li>
+            <li id="nav_mid">Product</li>
+            <li id="nav_mid">Pricing</li>
+            <li id="nav_mid">Context</li>
+        </ul>
+        <div class="nav_right">
+            <a href="#" id="login">Login</a>
+            <div id="btn_men">
+                <a href="#">Become a Member</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="para">
+            <p>Online validating</p>
+        </div>
+        <div class="heading">
+            <h1>Sell on the Web Like a Pro</h1>
+        </div>
+        <div class="sub_para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium explicabo fuga sequi cupiditate vero .</p>
+        </div>
+        <div class="btn">
+            <a href="#">Join Us</a>
+
+        </div>
+            <div class="card" id="card1">
+                <div class="small_logo"></div>
+                <h3>Lorem, ipsum.</h3>
+                <hr>
+                <div class="desc">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, quod. Lorem ipsum dolor sit amet.
+                </div>
+            </div>
+            <div class="card" id="card2">
+                <div class="small_logo"></div>
+                <h3>Lorem, ipsum.</h3>
+                <hr>
+                <div class="desc">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, quod. Lorem ipsum dolor sit amet.
+                </div>
+            </div>
+            <div class="card" id="card3">
+                <div class="small_logo"></div>
+                <h3>Lorem, ipsum.</h3>
+                <hr>
+                <div class="desc">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, quod.  Lorem ipsum dolor sit amet.
+                </div>
+            </div>
+    </main>
+</body>
+</html>
