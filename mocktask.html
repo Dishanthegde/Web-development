@@ -22,7 +22,6 @@
             height: 30vh;
             width: 100vw;
             background-image: url(../../Resources/images.jpeg);
-            
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -75,6 +74,13 @@
             padding-right: 8px;
         }
 
+        #btn_men:hover{
+            background-color: rgb(109, 109, 233);
+            color: rgb(6, 6, 6);
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+
         #login{
             background-color: none;
         }
@@ -123,6 +129,13 @@
             padding-right: 10px;
         }
 
+        .btn:hover{
+            background-color: rgb(109, 109, 233);
+            color: rgb(6, 6, 6);
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+
         .card{
             top: 38rem;
             position: absolute;
@@ -130,6 +143,7 @@
             width: 300px;
             border: 1px solid rgb(10, 10, 10);
             box-shadow: inset 0 0 10px rgba(0, 0, 0, .5);
+            background-color: rgb(255, 255, 255);
         }
 
         #card1{
@@ -149,6 +163,7 @@
             margin-top: 25px;
             margin-left: 25px;
             border-radius: 10%;
+            box-sizing: border-box;
         }
 
         h3{
@@ -165,6 +180,17 @@
             margin-top: 20px;
             margin-left: 25px;
             color: orange;
+        }
+        .card:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+
+        #small_logo_img{
+            height: 30px;
+            width: 30px;
+            margin-top: 10px;
+            margin-left: 10px;
         }
     </style>
 </head>
@@ -202,7 +228,9 @@
 
         </div>
             <div class="card" id="card1">
-                <div class="small_logo"></div>
+                <div class="small_logo">
+                    <img src="./Resources/heart-circle-check-solid.png" alt=""  id="small_logo_img">
+                </div>
                 <h3>Lorem, ipsum.</h3>
                 <hr>
                 <div class="desc">
@@ -210,7 +238,9 @@
                 </div>
             </div>
             <div class="card" id="card2">
-                <div class="small_logo"></div>
+                <div class="small_logo">
+                <img src="./Resources/signal-solid.png" alt="" id="small_logo_img">
+                </div>
                 <h3>Lorem, ipsum.</h3>
                 <hr>
                 <div class="desc">
@@ -218,7 +248,9 @@
                 </div>
             </div>
             <div class="card" id="card3">
-                <div class="small_logo"></div>
+                <div class="small_logo">
+                    <img src="./Resources/book-solid.png" alt="" id="small_logo_img">
+                </div>
                 <h3>Lorem, ipsum.</h3>
                 <hr>
                 <div class="desc">
