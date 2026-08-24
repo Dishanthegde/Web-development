@@ -1,0 +1,12 @@
+{
+    "name" : "dth",
+    "id" : 1234,
+    "address" : {
+        "phone no" : "1234566788",
+        "street no" : "4th street",
+        "area" : "vidyarnaypura"
+    },
+    "locations" : ["bangalore rural", "bangalore urban", "pune"],
+    "isInterested" : true,
+    "s_id" : null
+}
